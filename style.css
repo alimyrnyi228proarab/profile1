@@ -1,0 +1,226 @@
+/* Базовые настройки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #222232; /* Темный фон из макета */
+    color: #ffffff;
+    padding: 20px;
+}
+
+/* Шапка */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* Главный блок Hero (фото на заднем плане удалено) */
+.hero {
+    position: relative;
+    height: 300px; /* Уменьшили высоту, так как картинки больше нет */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-subtitle {
+    color: #ff5733;
+    font-size: 13px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 52px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+/* Портфолио */
+.portfolio {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.portfolio h2, .about h2 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.portfolio-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.portfolio-item {
+    width: 250px;
+    height: 300px;
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.portfolio-item.active {
+    border: 3px solid #3498db; /* Голубая рамка */
+}
+
+.portfolio-item img, .about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* О себе */
+.about {
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.red-text {
+    color: #ff5733;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.red-heading {
+    color: #ff5733;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.about-image {
+    width: 300px;
+    height: 350px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Карточки навыков */
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    background-color: #2a2a3d;
+    border: 2px solid #ff5733;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 180px;
+}
+
+.skill-card h3 {
+    color: #ff5733;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.skill-card p {
+    font-size: 12px;
+    color: #ccc;
+}
+
+/* Подвал и работающие кнопки соцсетей */
+footer {
+    text-align: center;
+    padding: 40px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid #ff5733; /* Красная рамка, как на макете */
+    color: #ff5733; /* Красный цвет иконки */
+    border-radius: 8px; /* Скругленные углы квадрата */
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+/* Эффект при наведении мышкой на иконку */
+.social-icon:hover {
+    background-color: #ff5733;
+    color: #ffffff;
+}
